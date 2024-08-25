@@ -59,6 +59,7 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
+    margin-bottom: 70px;
     
     &__nav {
         display: flex;
@@ -152,4 +153,50 @@ body {
             padding: 10px 50px;
         }
     }
+}
+
+
+.about {
+    & p{
+        font-weight: 400;
+        color: var(--secondary-text-color);
+        font-size: 18px;
+        line-height: 189%;
+        font-family: "Roboto";
+        margin-bottom: 70px;
+        max-width: 952px;
+    }
+
+    & h2{
+        font-family: "Archangelsk";
+        font-weight: 400;
+        font-size: 62px;
+        color: var(--primary-text-color);
+        margin-bottom: 25px;
+    }
+
+    & p span{
+        color: var(--text-blue);
+    }
+
+}
+
+.about__images{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width:1420px){
+        flex-direction: column;
+    }
+}
+
+.about__left{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.about__image-1{
+    margin-bottom: 32px;
 }
